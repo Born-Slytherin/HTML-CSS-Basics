@@ -1,11 +1,52 @@
 * {
-    margin: 0;padding: 0;
+    margin: 0;
+    padding: 0;
 }
 body {
-  padding:80px;
   background: url(https://wallpapers.com/images/hd/dark-theme-background-cml7xusbzkcxz371.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+header {
+    padding: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+header h1 {
+    font-size: 28px;
+}
+ul{
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+    gap: 30px;
+}
+li {
+    font-size: 20px;
+    color: white;
+}
+a {
+    text-decoration: none;
+    color:white
+}
+a:hover {
+    cursor: pointer;
+    text-decoration: underline;
+    text-decoration-color:orange;
+    text-underline-offset: 10px;
+}
+.container {
+    padding: 100px;
+    display: flex;
+    justify-content: space-evenly;
+    box-sizing: border-box;
+}
+div.left {
+    display: flex;
+    flex-direction: column;
 }
 h1 {
+    align-self:flex-start;
     text-align: center;
     color:white;
     font-size:50px;
@@ -17,6 +58,7 @@ p {
     margin-bottom: 50px;
 }
 .info {
+    display: block;
     padding: 20px;
     display: block;
     text-align: center;
@@ -25,8 +67,10 @@ p {
     font-size: 23px;
     border:1px solid white;
     border-radius: 50px;
+    margin-bottom:30px;
 }
 button {
+
     font-size: 20px;
     background:red;
     color:white;
@@ -37,11 +81,63 @@ button {
 }
 .github {
     display: block;
-    text-align: center;
-}
-img {
     display: block;
     text-align: center;
-    width: 600px;
+    margin-bottom:30px
+}
+div {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+img {
+    width: 400px;
     border-radius: 90px;
+}
+.gallery {
+    width:100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    justify-content: center;    
+    align-items: center;
+}
+div.item {
+    background: white;
+    width:400px;
+    height: 200px;
+    border-radius: 50px;
+    place-self: center;
+    overflow: hidden;
+}
+div.item img {
+    width: 100%;
+    border-radius: 0;
+}
+.wrapper {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+table {
+    border:1px solid white;
+    width:75%;
+    height: 75%;
+    color: white;
+    font-size: 50px;
+    border-radius: 50px;
+}
+th {
+    border-right: 3px solid white;
+
+}
+td,th {
+    border-bottom: 3px solid white;
+    text-align: center;
+
+}
+.last {
+    border-bottom:0;
 }
